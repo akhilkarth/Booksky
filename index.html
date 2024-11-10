@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>The Legend</h2>
+            <h5>Akhil</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, earum. Consequatur illo exercitationem facere explicabo dolores sit vel nisi quidem eius deleniti, minus nam dignissimos soluta magnam pariatur. Quasi, harum.</p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-Overlay"></div>
+    <div class="popup-Box">
+        <h2>Add book</h2>
+        <form >
+            <input type="text" placeholder="Booktitle" id="booktitle-input">
+            <input type="text" placeholder="Bookauthor" id="bookauthor-input">
+            <textarea placeholder="Short description" id="bookdecsription-input"></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+
+    <button class="addbutton" id="add-popup-button">+</button>
+
+    <!-- the js file must be link under the html then only the script will work -->
+    <script src="script.js"></script>
+</body>
+</html>
+
